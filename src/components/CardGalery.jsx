@@ -24,8 +24,8 @@ export default function Galery() {
     ];
 
   return (
-    <div className="mx-16">
-    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 ">
+    <div className="lg:mx-70 mx-5">
+    <div className="grid grid-cols-2 lg:gap-6 gap-2 sm:grid-cols-3 ">
       {list.map((item, index) => (
         <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")} className="transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-gray-500">
           <CardBody className="p-0 overflow-visible ">

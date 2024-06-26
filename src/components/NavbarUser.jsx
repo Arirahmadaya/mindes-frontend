@@ -108,7 +108,7 @@ export default function NavbarUser() {
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           onClick={handleMenuToggle}
-          className="sm:hidden text-white"
+          className="md:hidden text-white"
         />
         <NavbarBrand className="flex">
           <img
@@ -116,17 +116,17 @@ export default function NavbarUser() {
             alt="logo"
             className="md:w-12 md:h-12 pr-2 blok w-10 h-10"
           />
-          <div className="text-white hover:text-white/80">
-            <p className="font-bold lg:text-heading-6 text-body-2">
+          <div className="text-white hover:text-white/80 ">
+            <p className="font-bold lg:text-heading-6 md:text-body-2 text-caption-1 ">
               Desa Kalinyamat Kulon
             </p>
-            <p className="md:text-body-2 text-caption-1">Kota Tegal</p>
+            <p className="lg:text-body-1 md:text-body-2 text-caption-2">Kota Tegal</p>
           </div>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex gap-10 text-white"
+        className="hidden md:flex gap-10 text-white"
         justify="center"
       >
         {menuItemsMain.map((item, index) => (
@@ -185,12 +185,12 @@ export default function NavbarUser() {
           <NavbarItem>
             <Button
               as={Link}
-              className="bg-primary-30 text-white rounded-md"
+              className="bg-primary-30 text-white rounded-md "
               href="/login"
               variant="flat"
               onClick={handleLogin}
             >
-              Login <LogIn />
+              <span className="lg:text-caption-1 text-caption-2">Login</span> <LogIn className="lg:w-5 lg:h-5 w-4 h-4"/>
             </Button>
           </NavbarItem>
         )}

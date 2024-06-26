@@ -18,7 +18,7 @@ const ProfilDesa = () => {
             alt="Logo Desa"
             className=" lg:h-[300px] lg:w-[300px] h-[200px] w-[200px]"
           />
-          <h1 className="text-center font-semibold lg:text-heading-2 text-heading-4 text-secondary-50 text-blue hover:text-bluenight hover:drop-shadow-2xl whitespace-nowrap">
+          <h1 className="text-center font-semibold lg:text-heading-2 text-heading-5 text-secondary-50 text-blue hover:text-bluenight hover:drop-shadow-2xl whitespace-nowrap">
             Kelurahan Kalinyamat Kulon
             <br />
             Kecamatan Margadana
@@ -27,18 +27,18 @@ const ProfilDesa = () => {
           </h1>
         </div>
         <div className="justify-end lg:mt-0 mt-8">
-          <h2 className="text-center lg:text-heading-1 text-heading-3 font-bold text-blue hover:text-bluenight hover:drop-shadow-2xl">
+          <h2 className="text-center lg:text-heading-1 text-heading-5 font-bold text-blue hover:text-bluenight hover:drop-shadow-2xl">
             VISI
           </h2>
-          <p className="lg:text-heading-5 text-heading-6 font-reguler ">
+          <p className="lg:text-body-1 text-body-2 font-reguler ">
             Mewujudkan desa yang mandiri, sejahtera, dan
             <br />
             berbudaya.
           </p>
-          <h2 className="text-center lg:text-heading-1 text-heading-3 font-bold text-blue hover:text-bluenight hover:drop-shadow-2xl">
+          <h2 className="text-center lg:text-heading-1 text-heading-5 font-bold text-blue hover:text-bluenight hover:drop-shadow-2xl">
             MISI
           </h2>
-          <p className="lg:text-heading-5 text-heading-6 ">
+          <p className="lg:text-body-1 text-body-2 ">
             1. Mewujudkan tata kelola pemerintahan yang baik dan bersih.
             <br />
             2. Meningkatkan kualitas dan daya saing ekonomi daerah.
@@ -124,7 +124,7 @@ const ProfilDesa = () => {
       </div>
 
       <div className="lg:mb-24 mb-10 lg:mx-70 mx-5">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="">
           <h2 className="lg:text-display-2 text-heading-2 font-bold text-blue hover:text-bluenight hover:drop-shadow-2xl text-center mb-8">
             Sejarah Desa Kalinyamat Kulon
           </h2>
@@ -193,11 +193,11 @@ const ProfilDesa = () => {
         </div>
       </div>
 
-      <div  className="lg:mb-24 mb-10">
+      <div  className="lg:mb-24 mb-10 lg:mx-70 mx-5">
         <div className="mb-2 font-bold text-center text-heading-2 lg:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20">
           Peta Lokasi Desa
         </div>
-        <div className="lg:flex mx-70">
+        <div className="lg:flex gap-5">
           <div className=" bg-indigo-400/50 rounded-[20px] transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-gray-500 hidden lg:block">
             <div className="lg:w-[590px] h-[360px w-[400px] h-[250px] relative ">
               <div className="left-[37px] top-[20px] absolute text-black text-[38px] font-bold font-['Open Sans'] leading-[45.60px]">
