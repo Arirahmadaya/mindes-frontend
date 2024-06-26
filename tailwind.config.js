@@ -20,6 +20,13 @@ export default {
       info: "#2196F3",
     },
 
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+
     fontFamily: {
       sans: "open-sans, sans-serif",
     },
