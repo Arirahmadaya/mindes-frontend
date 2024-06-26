@@ -166,17 +166,17 @@ const treeRendering = (treeData) => {
     <ul>
       {treeData.map((item) => (
         <li key={item.id}>
-          <div className={`bg-primary-10 py-2 px-2 lg:w-[270px] md:w-[200px] ${item.id === "1" ? "w-[180px]" : "w-[80px]"} h-auto rounded-[15px]`}>
+          <div className={`bg-primary-10 lg:py-4 md:py-3 py-[6px] px-auto lg:w-[270px] md:w-[200px] ${item.id === "1" ? "w-[180px]" : "w-[70px]"} h-auto rounded-[15px]`}>
             <img
               src={item.imgUrl}
               alt={item.name}
-              className="lg:w-16 lg:h-16 md:w-12 md:h-12 w-10 h-10 rounded-full bg-secondary-20 mx-auto -mt-4"
+              className="lg:w-16 lg:h-16 md:w-12 md:h-12 w-10 h-10 rounded-full bg-secondary-20 mx-auto lg:-mt-8 -mt-4"
             />
-            <span className="lg:text-heading-6 md:text-body-1 text-caption-2 font-semibold lg:text-nowrap">
+            <span className="lg:text-heading-6 md:text-body-2 text-caption-2 font-semibold lg:text-nowrap">
               {item.name}
             </span>
             <br />
-            <span className="md:text-caption-2 text-[10px] font-thin lg:text-nowrap">
+            <span className="lg:caption-1 md:text-caption-2 text-[10px] font-thin lg:text-nowrap">
               {item.title}
             </span>
           </div>

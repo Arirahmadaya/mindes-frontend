@@ -11,7 +11,7 @@ const ProfilDesa = () => {
     <>
       <NavbarUser />
 
-      <div className="justify-between lg:mx-70 mx-5 lg:flex p-4 bg-white mt-5 lg:mb-24 mb-10 ">
+      <div className="justify-between lg:mx-70 mx-5 lg:flex p-4 bg-white mt-5  mb-10 ">
         <div className=" flex flex-col items-center mr-4">
           <img
             src="img/kota_tegal.png"
@@ -52,7 +52,7 @@ const ProfilDesa = () => {
         </div>
       </div>
 
-      <div className="lg:mb-24 mb-10">
+      <div className=" mb-10">
         <div className="lg:mb-2 font-bold text-center text-heading-2 lg:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20">
           Perangkat Desa
         </div>
