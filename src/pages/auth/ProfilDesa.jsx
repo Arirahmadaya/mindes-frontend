@@ -52,18 +52,18 @@ const ProfilDesa = () => {
         </div>
       </div>
 
-      <div className=" mb-10">
-        <div className="lg:mb-2 font-bold text-center text-heading-2 lg:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20">
+      <div className="lg:mb-10">
+        <div className="lg:mb-2 font-bold text-center text-heading-5 lg:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20">
           Perangkat Desa
         </div>
-        <div className=" ">
+        <div className="w-full h-full  lg:m-0 -mt-20">
           <StrukturPD />
         </div>
       </div>
 
       <div className="lg:mb-24 mb-10 lg:mx-70 mx-5">
         <div className="text-center">
-          <h1 className="font-bold lg:text-display-2 text-heading-2 text-blue hover:text-bluenight hover:drop-shadow-2xl">
+          <h1 className="font-bold lg:text-display-2 text-heading-5 text-blue hover:text-bluenight hover:drop-shadow-2xl">
             PRIMA
           </h1>
           <h5 className="lg:text-heading-5 mt-1 mb-8 text-heading-6">
@@ -72,7 +72,7 @@ const ProfilDesa = () => {
         </div>
         <div className="flex lg:justify-between justify-center lg:h-[380px] h-auto flex-wrap lg:gap-0 gap-4	">
           <div className="bg-secondary-40 w-[230px] h-[300px] rounded-xl justify-center text-white text-center self-end shadow-2x transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-gray-500">
-            <div className=" pt-4 font-bold text-heading-2">Profesional</div>
+            <div className=" pt-4 font-bold text-heading-5">Profesional</div>
             <div className="  flex flex-col justify-center text-center h-[200px]">
               <div className="px-4 text-body-1">
                 Berkompeten - Menyelesaikan Tugas secara Baik dan Benar Tuntas -
@@ -82,7 +82,7 @@ const ProfilDesa = () => {
           </div>
 
           <div className="bg-secondary-40 w-[230px] h-[300px] rounded-xl justify-end text-white text-center transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-gray-500">
-            <div className=" pt-4 font-bold text-heading-2">Responsif</div>
+            <div className=" pt-4 font-bold text-heading-5">Responsif</div>
             <div className="  flex flex-col items-center text-center justify-center h-[200px]">
               <div className="px-4 text-body-1">
                 Tanggap dan Peduli - Cepat Bertindak - Demokratif Komunikatif -
@@ -92,7 +92,7 @@ const ProfilDesa = () => {
           </div>
 
           <div className="bg-secondary-40 w-[230px] h-[300px] rounded-xl justify-center  text-white text-center self-end transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-gray-500">
-            <div className=" pt-4 font-bold text-heading-2">Integritas</div>
+            <div className=" pt-4 font-bold text-heading-5">Integritas</div>
             <div className="  flex flex-col items-center text-center justify-center h-[200px]">
               <div className="px-4 text-body-1">
                 Jujur - Komitmen - Perilakuk Terpuji - Konsekuen Disiplin -
@@ -102,7 +102,7 @@ const ProfilDesa = () => {
           </div>
 
           <div className="bg-secondary-40 w-[230px] h-[300px] rounded-xl justify-center  text-white text-center transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-gray-500">
-            <div className=" pt-4 font-bold text-heading-2">Melayani</div>
+            <div className=" pt-4 font-bold text-heading-5">Melayani</div>
             <div className="  flex flex-col items-center text-center justify-center h-[200px]">
               <div className="px-4 text-body-1">
                 Ramah - Berorientasi pada Kepuasan Masyarakat Berpedoman pada
@@ -112,7 +112,7 @@ const ProfilDesa = () => {
           </div>
 
           <div className="bg-secondary-40 w-[230px] h-[300px] rounded-xl justify-center  text-white text-center self-end transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-gray-500">
-            <div className=" pt-4 font-bold text-heading-2">Akuntabel</div>
+            <div className=" pt-4 font-bold text-heading-5">Akuntabel</div>
             <div className="  flex flex-col items-center text-center justify-center h-[200px]">
               <div className="px-4 text-body-1">
                 Taat Peraturan - Bertanggung Jawab Tidak Korupsi, Kolusi dan
@@ -125,7 +125,7 @@ const ProfilDesa = () => {
 
       <div className="lg:mb-24 mb-10 lg:mx-70 mx-5">
         <div className="">
-          <h2 className="lg:text-display-2 text-heading-2 font-bold text-blue hover:text-bluenight hover:drop-shadow-2xl text-center mb-8">
+          <h2 className="lg:text-display-2 text-heading-5 font-bold text-blue hover:text-bluenight hover:drop-shadow-2xl text-center mb-8">
             Sejarah Desa Kalinyamat Kulon
           </h2>
 

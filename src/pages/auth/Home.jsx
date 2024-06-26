@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Footer from "../../components/Footer";
 import Carousel from "../../components/CarouselHome";
 import CardBerita from "../../components/CardBerita";
@@ -14,6 +14,30 @@ import { LogIn } from "react-feather";
 import { MapsMain } from "../../components/Maps";
 
 const Home = () => {
+
+  const [beritaList, setBeritaList] = useState([]);
+
+  useEffect(() => {
+    fetchBerita();
+  }, []);
+
+  const fetchBerita = async () => {
+    try {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/berita`);
+      const dataWithImgUrls = response.data.data.map((item) => {
+        if (item.img_berita) {
+          item.img_berita_url = `${import.meta.env.VITE_API_URL}/public${item.img_berita}`;
+        } else {
+          item.img_berita_url = null;
+        }
+        return item;
+      });
+      setBeritaList(dataWithImgUrls.slice(0, 6)); // Mengambil maksimal 6 berita terbaru
+    } catch (error) {
+      console.error("Terjadi kesalahan saat memuat data berita", error);
+    }
+  };
+  
   return (
     <>
       <NavbarUser />
@@ -96,17 +120,17 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="lg:mb-24 mb-10">
-        <div className="mb-5 font-bold text-center text-heading-5 md:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20 lg:mx-70 mx-5">
+      <div className="lg:mb-24 mb-10 lg:mx-70 mx-5">
+        <div className="mb-5 font-bold text-center text-heading-5 md:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20 ">
           Berita Terhangat di Kalinyamat Kulon
         </div>
         <div>
-          <CardBerita />
+        <CardBerita list={beritaList} />
         </div>
       </div>
 
-      <div className="lg:mb-24 mb-10">
-        <div className="mb-5 font-bold text-center text-heading-5 md:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20 lg:mx-70 mx-5">
+      <div className="lg:mb-24 mb-10 lg:mx-70 mx-5">
+        <div className="mb-5 font-bold text-center text-heading-5 md:text-display-2 text-blue hover:text-bluenight hover:drop-shadow-2xl relative z-20 ">
           Galeri Kalinyamat Kulon
         </div>
         <div>
@@ -159,8 +183,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div>
 
       <Footer />
+      </div>
+
     </>
   );
 };

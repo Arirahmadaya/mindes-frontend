@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-wrap justify-between bg-primary-40 text-white rounded-t-3xl py-5 px-5 lg:px-70">
+      <footer className="flex flex-wrap justify-between bg-primary-40 text-white rounded-t-3xl lg:px-70 p-5 ">
         <div className="w-auto mb-4 ">
           <div>
             <Logo />
@@ -50,12 +50,12 @@ export default Footer;
 export const Logo = () => {
   return (
     <div className="flex items-center xl:mb-5">
-      <img src="logo/logo_light.png" alt="Logo" className="w-24 h-24 pr-3" />
-      <div className="-space-y-2">
-        <p className="text-heading-3 font-bold">Kalinyamat Kulon</p>
-        <p className="text-body-2">
-          Kecamatan Margadana
-          <br />
+      <img src="logo/logo_light.png" alt="Logo" className="lg:w-24 lg:h-24 w-18 h-18 pr-3" />
+      <div className="-space-y-2 -mt-1">
+        <p className="lg:text-heading-5 text-body-2 font-bold mb-1">Kalinyamat Kulon</p>
+        <p className="lg:text-body-2 text-caption-2">
+          Kecamatan Margadana,
+       
           Kota Tegal
           <br />
           Provinsi Jawa Tengah
@@ -106,10 +106,10 @@ export const Medsos = () => {
 export const KontakKelurahan = () => {
   return (
     <div>
-      <p className="text-body-1 font-bold mb-4 hidden md:block">
+      <p className="text-body-2 font-bold mb-4 hidden md:block">
         Kontak Kelurahan
       </p>
-      <div className="text-body-2">
+      <div className="text-caption-1">
         <div className="flex items-center space-x-2 py-2">
           <Icon.Phone className="text-white w-6 h-6" />
           <p>+62283 311354</p>
@@ -173,12 +173,12 @@ const ListKontak = [
 export const KontakPenting = () => {
   return (
     <div>
-      <p className="text-body-1 font-bold mb-4 hidden md:block ">
+      <p className="text-body-2 font-bold mb-4 hidden md:block ">
         Kontak Penting
       </p>
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         {ListKontak.map((kontak, index) => (
-          <div key={index} className="flex items-center space-x-2">
+          <div key={index} className="flex items-center space-x-2 text-caption-2">
             <img src={kontak.icon} alt={kontak.title} className="w-6 h-6" />
             <div>
               <p className="text-body-2 font-semibold">{kontak.title}</p>
@@ -194,7 +194,7 @@ export const KontakPenting = () => {
 export const Jelajahi = () => {
   return (
     <div>
-      <p className="text-body-1 font-bold mb-4 hidden md:block">Jelajahi</p>
+      <p className="text-body-2 font-bold mb-4 hidden md:block">Jelajahi</p>
       <div className="space-y-2 text-body-2">
         <Link to="/" className="hover:font-bold hover:underline">
           Beranda
